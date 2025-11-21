@@ -29,8 +29,8 @@ Will need the following functions in the program:
 #include <stdio.h>
 
 
-int number_list[11] = {15,97,2,2,105,42,6,18,2,7, 10000}; // array that is to be analyzed
-int nll = 11; // number length list
+int number_list[10] = {2,4,6,8,10,12,14,16,18,12}; // array that is to be analyzed
+int nll = 10; // number length list
 int count_by_2 = 0;
 int count_by_3 = 0;
 int count_by_4 = 0;
@@ -78,9 +78,15 @@ void main(void) {
 	printf("[ %d ] numbers are divisble by 3. \r\r", count_by_3);	
 	printf("[ %d ] numbers are divisble by 4. \r\r", count_by_4);	
 	printf("[ %d ] numbers are divisble by 5. \r\r", count_by_5);	
-	printf("[ %d ] numbers do not match any category. \r\r\r", count_no_match);	
+	printf("[ %d ] numbers do not match any category. \r\r", count_no_match);	
 //	printf("%d %d %d %d %d\r\r" , count_by_2, count_by_3, count_by_4, count_by_5, count_no_match);
 
+	if(count_no_match == 0){
+		printf("GAME OVER\r\r");
+	}
+	else{
+	printf("AHHHHH!!!!\r\r");
+	}
 	while(1);
 
 }
